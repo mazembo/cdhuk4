@@ -1,0 +1,5 @@
+== Welcome to the site of the "Centre des droits de l'homme de l'universite Kongo"
+
+ Cette application se sert du projet open source "refinery" comme la base d'un systeme de gestion de contenus.
+
+ Mazembo Mavungu Eddy est l' actuel constructeur du site du centre des droits de l'homme de l'universite Kongo.

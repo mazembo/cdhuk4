@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="le site internet du centre des droits de l'homme de l'universite Kongo">
+<meta name="keywords" content="universite Kongo, Centre des droits de l'homme de l'universite Kongo, programmes du Centre des droits de l'homme de l'universite Kongo, CDH-UK, Bas-Congo, Droits de l'homme et developpement, Localisation des droits de l'homme, Droits des communautes locales ">
+<meta name="author" content="Richard Lumbika, Sundi Mbambi Pascal, Mazembo Mavungu Eddy ">
+  <title>Centre de Droits de l'homme de l'université Kongo - CDHUK</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+<!-- Navigation Bar Starts -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="/"><%= image_tag ("cdhuk.png") %></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/">ACCUEIL</a></li>
+        <li><a href="/projets">PROJETS</a></li>
+        <li><a href="/blog">REFLEXIONS</a></li>
+        <li><a href="/news">EVENEMENTS ET OPPORTUNITES</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+    
+  </div>
+</div>
+<!--// Navbar Ends--> 
+
+<!-- BANNER SLIDER
+    ================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item slide-one active">
+      <div class="container">
+        <%= image_tag ("photo_devant_rectorat.jpg"), :class => "tales" %>
+        <div class="carousel-caption">
+          <h3>RECTORAT DE L'UNIVERSITE KONGO</h3>
+          <h1>Excellence, Solidarité, Développement</h1>
+          
+          <p><a class="btn btn-giant btn-primary" href="#" role="button">LIRE DAVANTAGE</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item slide-two">
+      <%= image_tag ("etudiants_et_bus.jpg"), :class => "tales" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h2>ETUDIANTS A COTE DU BUS</h2>
+          <p class="lead">Le bus, don du gouvernorat de la province du Bas-Congo</p>
+          <p><a class="btn btn-lg btn-primary" href="ministry.html" role="button">LIRE DAVANTAGE &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item slide-three">
+      <%= image_tag ("autorite_coutumiere.jpg"), :class => "tales" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h2>ENGAGE AVEC LES INSTITUTIONS COMMUNAUTAIRES</h2>
+          <p class="lead">Le CDHUK s'engage dans la promotion des droits liés a la santé, l'education et les besoins de base </p>
+          <p><a class="btn btn-lg btn-primary" href="image-gallery.html" role="button">LIRE DAVANTAGE &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item slide-four">
+      <%= image_tag ("profs_etudiants.jpg"), :class => "tales" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h2>Etudiants du CDHUK</h2>
+          <p class="lead">Le Centre entend former les practiciens, chercheurs et défenseurs des droits de l'homme </p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">LIRE DAVANTAGE &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+<!-- // Banner Slider --> 
+<div class="container">
+<%= yield %>
+</div> 
+<!--UPCOMING EVENT-->
+
+<div class="highlight-bg has-margin-bottom">
+  <div class="container event-cta">
+    <div class="ec-txt"> <span>REFLEXIONS ET PUBLICATIONS</span>
+      <p>"Tous les êtres humains naissent libres et égaux en dignité et en droits. Ils sont doués de raison et de conscience et doivent agir les uns envers les autres dans un esprit de fraternité. " - Déclaration universelle des droits de l'homme</p>
+    </div>
+    <a class="btn btn-lg btn-primary" href="/blog" role="button">REFLEXIONS, LIRE DAVANTAGE </a> </div>
+</div>
+
+<!-- // UPCOMING EVENT --> 
+
+<!--FEATURED BLOCK-->
+<div class="container">
+  <div class="row feature-block">
+    <div class="col-md-4 col-sm-6 has-margin-bottom"><%= image_tag ("maternite_nsumba_petit.jpg"), :class => "img-responsive", :alt => "visite de CDHUK a la maternite Nsumba" %>
+      <h3>Localiser les droits de l'homme...</h3>
+      <p>Cette brève contribution vise à faire la lumière sur la façon dont l'UNICEF adapte son approche fondée sur les droits de l'homme (ABDH) aux réalités locales des détenteurs de droits, dans le cas de la RDC où il soutient le projet ‘Villages</p>
+      <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-4 col-sm-6 has-margin-bottom"><%= image_tag ("visite_sur_terrain.jpg"), :class => "img-responsive", :alt => "travail sur terrain au CDHUK" %>
+      <h3>La protection des droits de l'homme par la cooperation au developpement</h3>
+      <p>L’irruption des droits de l’homme dans la coopération belgo-congolaise est le reflet des tendances internationales des années 1990. L’intégration des droits de l’homme dans la coopération belgo-congolaise est un accident, qui va au gré du</p>
+      <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0 center-this has-margin-bottom"><%= image_tag ("conference_370.jpg"), :class => "img-responsive", :alt => "conference-debat au CDHUK" %>
+      <h3>Kinkimba kia Kongo, une loge? Parlons-en.</h3>
+      <p>Dans les milieux réellement « intellectuels », les questions qui fâchent ne se traitent pas de façon épidermique ou émotionnelle. Elles donnent lieu à un débat logique où les intelligences s’affrontent. Arguments contre arguments, les esprits qui.</p>
+      <p><a href="/blog" role="button">LIRE DAVANTAGE →</a></p>
+    </div>
+    <!-- /.col-md-4 --> 
+  </div>
+</div>
+<!-- // END FEATURED BLOCK--> 
+
+
+
+<!--OUR GALLERY-->
+<div class="container has-margin-bottom">
+  <div class="section-title">
+    <h4> NOS PHOTOS </h4>
+  </div>
+  <div class="img-gallery row">
+    
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery1.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "visite avec un partenaire belge" %> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery2.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "visite avec un partenaire belge" %> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery3.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "Prof Richard Lumbika et un partenaire belge" %> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery4.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "etudiants et membres de la communaute" %> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery5.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "etudiants et membres de la communaute" %> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery6.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "etudiants et notre partenaire belge" %> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery7.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "Le CDHUK et une autorite coutumiere" %> </a> </div>
+    <div class="col-sm-4 col-md-3"> <a class="fancybox" href="#" data-fancybox-group="gallery" title="church image gallery"> <%= image_tag ("gallery8.jpg"), :class => "img-responsive", :width => "270", :height =>"270", :alt => "Le CDHUK et une autorite coutumiere" %> </a> </div>
+       
+  </div>
+</div>
+<!--// END OUR GALLERY --> 
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <h5>UN MOT SUR LE CDHUK</h5>
+        <p>La vision du CDHUK est de rapprocher la communauté universitaire de l’UK des populations défavorisées. Sa mission est d’articuler la recherche, la documentation, la formation en droits de l’homme, ainsi que leur vulgarisation. </p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>LIENS RAPIDES</h5>
+        <ul class="footer-links">
+          <li><a href="/projets">PROJETS</a></li>
+          <li><a href="/blog">REFLEXIONS ET PUBLICATIONS</a></li>
+          <li><a href="/news">EVENEMENTS ET OPPORTUNITES</a></li>
+          <li><a href="/contact">CONTACTEZ-NOUS</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>NOTRE ADRESSE</h5>
+        <p>Centre des droits de l'homme de l'universite Kongo <br>
+          Université Kongo, Avenue Kolo, No 23, B.P. 80 <br>
+          Mbanza-Ngungu, Province du Bas-Congo, RDC<br>
+          <br>
+          Tél. +243816181183<br>
+          Email: <a href="#">richlumbika@yahoo.fr</a></p>
+          
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>CONNECT</h5>
+        <div class="social-icons"><a href="#"><%= image_tag ("fb-icon.png"), :alt => "social"%></a> <a href="#"><%= image_tag ("tw-icon.png"), :alt => "social"%></a> <a href="#"><%= image_tag ("in-icon.png"), :alt => "social" %></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <p class="text-center">2014 Tous droits reservés</p>
+    </div>
+  </div>
+</footer>
+
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../docs-assets/js/holder.js"></script>
+</div>
+<!--============== EVENT CAROUSEL =================--> 
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+	navText: [
+      "<span class='nav-arrow left'></i>",
+      "<span class='nav-arrow right'></i>"
+      ],
+    responsive:{
+        0:{
+            items:1
+        },
+		550:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        992:{
+            items:4
+        }
+    }
+})
+
+$('.owl-carousel2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+	navText: false,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+</script> 
+
+<!--============== IMAGE GALLERY =================--> 
+
+<script>
+$(document).ready(function() {
+ $('.fancybox').fancybox();			
+});			
+</script> 
+
+</body>
+</html>
